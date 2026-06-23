@@ -1,5 +1,7 @@
 # adaptive-latent-reasoning
 
+Xiang Zhang, University of Michigan, Ann Arbor
+
 A study of **hidden-state-guided chain-of-thought (CoT) compression**: can we detect *which* CoT tokens
 are redundant from the model's own hidden states, and fold only those into latent (continuous) reasoning
 while keeping the load-bearing tokens explicit? We use **MCIG (Manifold Causal Information Gain)**, a
