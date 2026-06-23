@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+.conda/
+
+# Training artifacts (kept off the repo on purpose)
+checkpoints/
+ckpts/
+*.pt
+*.safetensors
+*.bin
+wandb/
+outputs/
+visualizations/
+*.html
+
+# Logs & raw data dumps
+logs/
+*.log
+*.csv
+*.jsonl
+
+# Datasets / model weights
+data/
+*.tar.gz
+*.whl
+
+# Keep curated small result summaries & figures (do NOT ignore)
+!**/results/**
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

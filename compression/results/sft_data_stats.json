@@ -1,0 +1,16 @@
+{
+  "num_sft_trajectories": 3512,
+  "num_source_trajectories": 4411,
+  "total_skip_insertions": 7922,
+  "total_tokens_replaced": 25684,
+  "avg_skip_ratio": 0.016071896770414793,
+  "stage1_segments": 8729,
+  "config": {
+    "epsilon": 0.1,
+    "max_skip_ratio": 0.12,
+    "min_segment_len": 3,
+    "max_segment_len": 30,
+    "target_skip_quantile": 0.2,
+    "skip_counterfactual": false
+  }
+}

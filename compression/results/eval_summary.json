@@ -1,0 +1,13 @@
+{
+  "with_skip": {
+    "accuracy": 0.686125852918878,
+    "correct": 905,
+    "total": 1319,
+    "mode": "with_skip",
+    "mean_skips": 0.3169067475360121,
+    "skip_ratio": 0.0010174252326325757,
+    "mean_response_len": 311.4791508718726,
+    "total_time_seconds": 235.84966373443604,
+    "problems_per_second": 5.592545603478912
+  }
+}
