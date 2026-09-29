@@ -7,11 +7,8 @@ are redundant from the model's own hidden states, and fold only those into laten
 while keeping the load-bearing tokens explicit? We use **MCIG (Manifold Causal Information Gain)**, a
 training-free per-token redundancy signal that cleanly localizes filler vs. decisive tokens — but **the
 compression built on it does not pan out at 1.5B** (GSM8K regresses from ~65% to ~58% once the model folds
-non-trivially). The report analyzes *why* (five causes) and motivates a *selective* latent↔explicit switch
+non-trivially). We analyze *why* (five causes) and motivates a *selective* latent↔explicit switch
 over wholesale latent reasoning.
-
-📄 **Full research report:** [`REPORT.md`](REPORT.md) — the experimental process, the negative result,
-the five-cause analysis, and why the project pivoted, with citations in [`REFERENCES.md`](REFERENCES.md).
 
 ## Key findings
 
@@ -57,5 +54,5 @@ compression/           MCIG signal + latent-feedback adapter + curriculum + GRPO
                        + results/ (incl. figures/mcig_semantic_heatmap.png)
 switching_experiments/ Coconut-style latent↔explicit curricula + Semantic Anchoring Loss + results/
 scripts/               run_p1 (data) · run_p15 (SFT) · run_p2 (GRPO)
-REPORT.md  full report   ·   REFERENCES.md  bibliography
+REFERENCES.md  bibliography
 ```
